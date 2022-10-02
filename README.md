@@ -18,12 +18,10 @@ Options:
 
 ## Build
 ```
-cabal install --lib sdl2
-cabal install --lib sdl2-ttf
-cabal install --lib aeson
-cabal install --lib bytestring
-cabal install --lib utf8-string
-cabal install --lib linear
-cabal install --lib vector
-ghc --make scov
+cargo build --release
+
+If you get errors about SFML headers not being found, or linker errors, that probably means SFML is not installed in a global location. In that case, you can set two environment variables to help rust-sfml find the required files:
+
+    SFML_INCLUDE_DIR. Set this to the include folder of your SFML location.
+    SFML_LIBS_DIR. Set this to the lib folder of your SFML location.
 ```
