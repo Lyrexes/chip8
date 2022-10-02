@@ -1,7 +1,7 @@
 # chip8
 A Chip8 emulator (interpreter) written in Rust
 
-![chip8-demo](https://user-images.githubusercontent.com/51889103/193450845-97e2d1b5-ae86-4e23-9c00-1b99680bd2be.gif)
+![2022-10-02 12-59-22](https://user-images.githubusercontent.com/51889103/193451025-7f7e67ed-d32c-4f3f-baa3-604bcbc7406a.gif)
 
 Usage 
 ```
