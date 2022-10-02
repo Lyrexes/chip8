@@ -1,7 +1,9 @@
 # chip8
 A Chip8 emulator (interpreter) written in Rust
 
-## Usage 
+##![chip8-demo](https://user-images.githubusercontent.com/51889103/193450813-22d66fa8-b8ab-42c0-9325-b5ae144b9649.gif
+
+Usage 
 ```
 chip8.exe [OPTIONS] <path>
 
