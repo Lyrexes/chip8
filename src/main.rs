@@ -10,20 +10,20 @@ mod memory;
 
 fn main() -> Result<(), String> {
     let matches = command!()
-        .arg(arg!(path: [path] "path to the rom file").required(true))
+        .arg(arg!(path: [path] "Path of rom file").required(true))
         .arg(
-            arg!(-l --legacy ... "run with old instructions on")
+            arg!(-l --legacy ... "Run with old instructions on")
                 .required(false)
                 .action(ArgAction::SetTrue),
         )
         .arg(
-            arg!(-f --frequency [FREQUENCY] ... "run with specified frequency")
+            arg!(-f --frequency [FREQUENCY] ... "Run with specified frequency")
                 .required(false)
                 .value_parser(value_parser!(f32))
                 .default_value("700"),
         )
         .get_matches();
-    let mut screen = Screen::new((800u32, 400u32), "chip-8");
+    let mut screen = Screen::new((800u32, 400u32), "chip8");
     let mut memory = Memory::new();
     let mut cycle_clock = Clock::start();
     let old_instructions = matches.get_flag("legacy");
